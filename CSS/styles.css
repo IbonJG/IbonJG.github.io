@@ -1,0 +1,8 @@
+/* Esto es un comentario de bloque en css.
+Es como en Java y diferente al de html.
+No existen comentarios de linea
+*/
+img {
+    width: 50%;
+    height: auto;
+}
