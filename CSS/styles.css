@@ -6,3 +6,11 @@ img {
     width: 50%;
     height: auto;
 }
+
+/*
+Usamos un punto porque es un selector de clase, se aplica se a todas las etiquetas que tengan class="imagen-xs"
+*/
+.imagen-xs {
+width: 100px;
+height: 50px;
+}
