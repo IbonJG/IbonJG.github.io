@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Titulo(mi primera pagina de prueba)</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
         <p>Esto es un ancla que nos lleva a un lugar predeterminado de nuestra pagina: <a href="#inicio">Ir arriba</a></p>
         <p>Esto es un ancla que nos lleva a un lugar predeterminado de otra pagina de nuestra propiedad:<a href="pagina2.html#introduccion">Introduccion</a><br></p>
         <p><h2>LISTAS</h2></p>
-        <p>Esto es una lista ordenada</p>
+        <p>Esto es una Lista Ordenada</p>
             <ol>
                 <li>Ibon Juarrero</li>
                 <li>Aitor Santiago</li>
@@ -51,6 +51,180 @@
                 <li>Jon Murcia</li>
                 <li>Igor Carrascal</li>
             </ol>
-        
+        <p>Esto es una Lista NO Ordenada</p>
+            <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>HTML</li>
+            </ul>
+        <p>Esto es una Lista de Definiciones</p>
+            <dl>
+                <dt>Athletic Club</dt>
+                    <dd>Fundado en 1898 en Bilbao. Juega como local en el estadio San Mames.</dd>
+                <dt>Real Madrid CF</dt>
+                    <dd>Fundado en 1900 en Madrid. Juaga como local en el estadio Santiago Bernabeu</dd>
+                <dt>Real Club Celta de Vigo</dt>
+                    <dd>Juega como local en el estadio Balaidos en la ciudad de Vigo en Pontevedra</dd>
+            </dl>
+        <p>Esto es una lista anidada</p>
+            <ol>
+                <li>Euskadi
+                    <ul>
+                        <li>Araba</li>
+                        <li>Bizkaia</li>
+                        <li>Gipuzkoa</li>
+                    </ul>
+                </li>
+                <li>Catalunya
+                    <ul>
+                        <li>Lleida</li>
+                        <li>Girona</li>
+                        <li>Barcelona</li>
+                        <li>Tarragona</li>
+                    </ul>
+                </li>
+                <li>Comunidad Valenciana
+                    <ul>
+                        <li>Castellon</li>
+                        <li>Valencia</li>
+                        <li>Alicante</li>
+                    </ul>
+                </li>
+            </ol>
+        <p></p>
+        <h2>TABLAS</h2>
+            <p>Tabla normal</p>
+                <table border="1">
+                    <tr align="center">
+                        <td>Asia</td><td>China</td><td>Mongolia</td><td>Japon</td>
+                    </tr>
+                    <tr align="right">
+                        <td>America</td><td>EEUU</td><td>Colombia</td><td>Mexico</td>
+                    </tr>
+                    <tr align="left">
+                        <td>Europa</td><td>Alemania</td><td>Italia</td><td>Francia</td>
+                    </tr>
+                </table>
+            <p>Tabla con encabezado</p>
+                <table border="1">
+                    <tr>
+                        <th>Continente</th><th>Pais</th><th>Pais</th><th>Pais</th>
+                    </tr>
+                    <tr>
+                        <td>Asia</td><td>China</td><td>Mongolia</td><td>Japon</td>
+                    </tr>
+                    <tr>
+                        <td>America</td><td>EEUU</td><td>Colombia</td><td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td><td>Alemania</td><td>Italia</td><td>Francia</td>
+                    </tr>
+                </table>
+            <p>Tabla con Titulo</p>
+                <table border="1">
+                    <caption>Tabla de continentes y paises</caption>
+                    <tr>
+                        <th>Continente</th><th>Pais</th><th>Pais</th><th>Pais</th>
+                    </tr>
+                    <tr>
+                        <td>Asia</td><td>China</td><td>Mongolia</td><td>Japon</td>
+                    </tr>
+                    <tr>
+                        <td>America</td><td>EEUU</td><td>Colombia</td><td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td><td>Alemania</td><td>Italia</td><td>Francia</td>
+                    </tr>
+
+                </table>
+            <p>Tabla con combinacion de celdas</p>
+                <table border="1">
+                    <caption>Tabla de continentes y paises</caption>
+                    <tr>
+                        <th rowspan="4">Mundo</th><th>Continente</th><th colspan="3">Pais</th>
+                    </tr>
+                    <tr>
+                        <td>Asia</td><td>China</td><td>Mongolia</td><td>Japon</td>
+                    </tr>
+                    <tr>
+                        <td>America</td><td>EEUU</td><td>Colombia</td><td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td><td>Alemania</td><td>Italia</td><td>Francia</td>
+                    </tr>
+                </table>
+        <h2>Caracteres Especiales</h2>
+            <p>
+                &lt;    menor que<br>
+                &gt;    mayor que<br>
+                &amp;   ampersand<br>
+                &nbsp;  //Espacio en blanco.<br>
+                &copy;  copyright<br>
+                &euro;  euro<br>
+                &dollar;    dollar<br>
+                &yen;   Yen<br>
+            </p>
+        <h2>Formularios</h2>
+            <form action="formulario.php" method="post">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                <input type="submit" value="enviar">
+            </form>
+            <hr>
+            <br>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                Introduce contraseña:
+                <input type="password" name="contraseña" size="8">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+            <hr>
+            <br>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                Introduce tu email:
+                <input type="text" name="email" size="40">
+                <br>
+                Deja un comentario:<br>
+                <textarea name="comentario" rows="5" cols="100"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+            <hr>
+            <br>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                <br>
+                Selecciona tus jugadores favoritos:<br>
+                <input type="checkbox" name=""> Zinedine Zidane &nbsp;&nbsp;
+                <input type="checkbox" name=""> Ronaldo Nazario<br>
+                <input type="checkbox" name=""> Lionel Messi &nbsp;&nbsp;
+                <input type="checkbox" name=""> Pep Guardiola<br>
+                <input type="checkbox" name=""> Xavi Hernandez &nbsp;&nbsp;
+                <input type="checkbox" name=""> Julen Guerrero<br>
+                <input type="checkbox" name=""> Alessandro Del Piero &nbsp;&nbsp;
+                <input type="checkbox" name=""> Thierry Henry<br>
+                <input type="checkbox" name=""> Dennis Bergkamp &nbsp;&nbsp;
+                <input type="checkbox" name=""> Michael Laudrup
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="">
+
+
+
+            </form>
+
+
+
+
 </body>
 </html>
