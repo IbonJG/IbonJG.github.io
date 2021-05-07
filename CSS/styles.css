@@ -14,3 +14,25 @@ Usamos un punto porque es un selector de clase, se aplica se a todas las etiquet
 width: 100px;
 height: 50px;
 }
+
+hr{
+    background-color: black;
+    height: 5px;
+}
+
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+/*plantilla para crear un estilo de boton*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

@@ -1,0 +1,36 @@
+
+h1 {
+    background-color: pink;
+    color: rgb(59, 175, 44);
+    text-align: center;
+    width: 50%;
+}
+
+p {
+    width: 50%;    
+}
+
+
+h2{
+    color: purple;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+img:hover{
+    width: 800px;
+    height: 500px;
+}
+
+.titulo-mayusculas{
+    color: blue;
+    text-transform: uppercase;
+}
+
+#tituloUnico{
+    color: chartreuse;
+    text-transform: capitalize;
+}

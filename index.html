@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo(mi primera pagina de prueba)</title>
+    <link rel="stylesheet" href="vendors/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -217,12 +218,158 @@
                 <input type="submit" value="Enviar">
             </form>
             <hr>
-            <form action="">
-
-
-
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                <br>
+                Seleciona tu color favorito: <br>
+                <input type="radio" name="color" value="rojo">Rojo <br>
+                <input type="radio" name="color" value="verde">Verde <br>
+                <input type="radio" name="color" value="azul">Azul <br>
+                <input type="radio" name="color" value="amarillo">Amarillo <br>
+                <input type="submit" value="Enviar">
             </form>
-
+            <hr>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20">
+                <br>
+                Elige tu pais:
+                <select name="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="chile"> Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="españa">España</option>
+                    <option value="inglaterra">Inglaterra</option>
+                    <option value="alemania">Alemania</option>
+                    <option value="suecia">Suecia</option>
+                    <option value="polonia">Polonia</option>
+                    <option value="francia">Francia</option>
+                </select><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                Seleciona uno o varios colores(Presiona Ctrl para seleccionar varios):<br>
+                <select name="colores[]" size="5" multiple>
+                    <option value="rojo">Rojo</option>
+                    <option value="verde">Verde</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="negro">Negro</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="violeta">Violeta</option>
+                    <option value="rosa">Rosa</option>
+                </select><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+            Selecciona jugadorees para la seleccion:
+                <select name="selccion">
+                    <optgroup label="Athletic Club">
+                        <option value="1">Unai Simon</option>
+                        <option value="1">Iñigo Martinez</option>
+                        <option value="1">Iker Muniain</option>
+                        <option value="1">Alex Berenguer</option>
+                        <option value="1">Ibai Gomez</option>
+                    </optgroup> 
+                    <optgroup label="Real Sociedad">
+                        <option value="1">Mikel Oyarzabal</option>
+                        <option value="1">Mikel Merino</option>
+                        <option value="1">Zubimendi</option>    
+                        <option value="1">Aurrekoetxea</option>
+                    </optgroup>
+                    <optgroup label="Alaves">
+                        <option value="1">Pacheco</option>
+                        <option value="1">Garcia</option>
+                        <option value="1">Aguirrezabala</option>
+                    </optgroup>
+                </select>    
+            <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20"><br>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+                <button type="reset"><i class="fas fa-trash"></i> Borrar</button>
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                <h3>Calculadora</h3>
+                <input type="button" name="boton7" value=" 7 ">
+                <input type="button" name="boton8" value=" 8 ">
+                <input type="button" name="boton9" value=" 9 ">
+                <input type="button" name="botondiv" value=" / ">
+                <br>
+                <input type="button" name="boton4" value=" 4 ">
+                <input type="button" name="boton5" value=" 5 ">
+                <input type="button" name="boton6" value=" 6 ">
+                <input type="button" name="botonmulti" value=" * ">
+                <br>
+                <input type="button" name="boton1" value=" 1 ">
+                <input type="button" name="boton2" value=" 2 ">
+                <input type="button" name="boton3" value=" 3 ">
+                <input type="button" name="botonmas" value=" + ">
+                <br>
+                <input type="button" name="boton0" value=" 0 ">
+                <input type="button" name="botonigual" value=" = ">
+                <input type="button" name="botonmenos" value=" - ">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20"><br><br>
+                Selecciona una foto:
+                <input type="file" name="foto"><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                <input type="hidden" value="11:30" name="hora">
+                Introduce tu nombre:
+                <input type="text" name="nombre" size="20"><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    Nombre y Apellido:
+                    <input type="text" name="nombreapellido" size="30"><br>
+                    DNI:
+                    <input type="text" name="dni" size="8"><br>
+                    Fecha de nacimiento:
+                    <input type="date" name="fechanacim"><br>
+                    Direccion:
+                    <input type="text" name="direccion" size="50"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Centro de Estudios</legend>
+                    Nombre:
+                    <input type="text" name="nombrecentro" size="30"><br>
+                    Provincia:
+                    <input type="text" name="provinciacentro" size="30"><br>
+                    Direccion:
+                    <input type="text" name="direccioncentro" size="50"><br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="POST">
+                Nombre y Apellido:
+                <input type="text" value="Ingrese su nombre y apellido" name="nombreapellido" size="30"><br>
+                ¿Eres mayor de edad?<br>
+                Si<input type="radio" name="radiosi" value="si"><br>
+                No<input type="radio" name="radiono" checked value="no"><br>
+                Telefono:
+                <input type="text" value="94-" name="telefono" size="15"><br>
+                Agrege un comentario:<br>
+                <textarea name="comentarios" rows="10" cols="50">Escribe aqui tu comentario</textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
 
 
 
