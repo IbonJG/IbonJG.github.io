@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <a name="inicio"></a>
+    <a id="inicio"></a>
     <h1>Titulo Pagina, no confundir con la etiqueta TITLE, en h1</h1>
     <h2>Esto es un titulo en h2</h2>
     <h3>Esto es un titulo en h3</h3>
@@ -31,7 +31,7 @@
         Error nostrum libero illo aut. Voluptates at minima omnis totam a tenetur officiis mollitia iste. si yo hago asi y lo guardo me lo guarda automatocamente en eclipse?</p>
     <p>Voluptatem, nobis! Sunt corporis culpa eos magnam accusantium, ullam tenetur obcaecati. Assumenda ratione id sint, <br>
         quidem quae temporibus ad asperiores repellat placeat, consequatur, a atque debitis amet? Veniam, nihil velit.</p>
-        <p><h2>Tipos de enlaces o anclas / Hipervincunlos</p></h2></p>
+        <p><h2>Tipos de enlaces o anclas / Hipervincunlos</h2></p>
         <p>Esto es un enlace a otra pagina de nuestra propiedad <a href="pagina2.html"> Pagina2</a></p>
         <p>Esto es un enlace a otra pagina externa a nuestro proyecto <a href="https://www.as.com/">Enlace a Diario AS</a></p>
         <p>Esto es un enlace a otra pagina externa abierta en otra pestaña <a href="https://www.playhearthstone.com/" target="_blank">Enlace a Harthstone</a></p>
@@ -370,8 +370,77 @@
                 <input type="submit" value="Enviar">
             </form>
             <hr>
-
-
-
+            <form action="formulario.php" method="POST">
+                <input type="text" name="text1" size="5" tabindex="1">
+                <input type="text" name="text2" size="5" tabindex="4">
+                <input type="text" name="text3" size="5" tabindex="7">
+                <br>
+                <input type="text" name="text4" size="5" tabindex="2">
+                <input type="text" name="text5" size="5" tabindex="5">
+                <input type="text" name="text6" size="5" tabindex="8">
+                <br>
+                <input type="text" name="text7" size="5" tabindex="3">
+                <input type="text" name="text8" size="5" tabindex="6">
+                <input type="text" name="text9" size="5" tabindex="9">
+                <br>
+                <input type="submit" value="enviar" tabindex="10">
+            </form>
+            <hr>
+            <form action="formulario.php" method="post">
+                Seleccione la sección donde desea ingresar:
+                <br>
+                <input type="radio" name="seccion" value="1" disabled>Niños<br>
+                <input type="radio" name="seccion" value="2">Adolescentes<br>
+                <input type="radio" name="seccion" value="3">Mayores<br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="post">
+                Introduce tu nombre: 
+                <input type="text" name="nombre" maxlength="12" size="20">
+                <br>
+                Ingrese su clave: 
+                <input type="password" name="clave" maxlength="8" size="12">
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="formulario.php" method="post">
+                Ingrese su nombre:
+                <input type="text" name="nombre" size="30" value="Nombre" readonly><br>
+                Contrato:<br>
+                <textarea name="comentarios" rows="5" cols="60" readonly>Por la presente .....</textarea> 
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="mailto:reclamos@gmail.com" method="post" enctype="text/plain">
+                Introduce tu nombre: 
+                <input type="text" name="nombre" size="20">
+                <br>
+                Introduce tu dirección: 
+                <input type="text" name="dirección" size="30">
+                <br>
+                Informe del problema:
+                <br>
+                <textarea rows="5" cols="40" name="problema">Informenos</textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <form action="registrardatos.php" method="post">
+                <fieldset>
+                    <legend>Formulario de comentarios.</legend>
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input type="text" name="nombre" size="30" id="nombre"><br>
+                    <label for="mail">Ingrese su mail:</label>
+                    <input type="text" name="mail" size="50" id="mail"><br>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea name="comentarios" rows="5" cols="60" id="comentarios"></textarea><br>
+                    <input type="submit" value="Enviar">
+                    </fieldset>
+            </form>
+            <hr>
+            <a href="#inicio">Ir al inicio</a>
 </body>
 </html>
