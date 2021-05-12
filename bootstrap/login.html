@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- mi css-->
+    <link rel="stylesheet" href="../CSS/bootstrap-custom.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="login.html"><i class="fab fa-autoprefixer"></i>MKX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="participantes.html">Participantes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Formulario Alta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="layouts.html">Layout</a>
+                  </li>
+                 
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <!--Contenido principal o main -->
+
+    <!--final de contenido principal o main-->
+
+    <div class="container w-50">
+    <h1>Iniciar Sesion</h1>
+    <form action="#" method="POST">
+        <label for="nombre" class="form-label">Nombre de Usuario</label>
+        <input type="text" name="nombre" requiered autofocus class="form-control" placeholder="Tu email o numero de telefono"><br>
+        
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" name="contrasenia" required class="form-control" placeholder="Minimo 6 max 8"><br>
+        
+        <input type="submit" value="Enviar" class="btn btn-block btn-primary mt-4">
+    </form>
+    </div>
+       
+    <footer class="bg-primary fixed-bottom">
+        <div class="d-flex">
+            <div class="info">
+                <p>CopyRight Elorrieta</p>
+            </div>
+            <div class="rrss">
+                <nav>
+                    <ul class="d-flex justify-content-end">
+                        <li><a href="https://es-es.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>    
+    </footer>
+
+
+    <!-- JavaScritp para bootstrap 5.0.0-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
