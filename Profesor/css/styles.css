@@ -1,0 +1,27 @@
+/* 
+  Esto es un comentario de bloque en CSS.
+  Es como en JAVA y diferente al de HTML.
+  No existen comentarios de linea
+*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* 
+    usamos un "." por que es un selector de clase
+    se aplica este estilo a todas las etiquetas que tengan class="imagen-xs"
+ */
+.imagen-xs {
+    width: 100px;
+    height: 50px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}

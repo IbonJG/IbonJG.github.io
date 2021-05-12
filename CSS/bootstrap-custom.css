@@ -36,6 +36,7 @@ footer .info {
 }
 footer .rrss {
     width: 30%;
+<<<<<<< HEAD
 } 
 
 .row .col, .row .coltest {
@@ -44,3 +45,6 @@ footer .rrss {
     background-color: rgba(9, 48, 87, 0.397);
     border: 1px solid rgba(12, 62, 112, 0.883);
 }
+=======
+} 
+>>>>>>> branch 'master' of https://github.com/IbonJG/IbonJG.github.io.git
